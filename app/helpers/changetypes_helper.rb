@@ -1,0 +1,2 @@
+module ChangetypesHelper
+end

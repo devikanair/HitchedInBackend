@@ -4,13 +4,14 @@
     <list default="true" id="165ac6ab-9ca8-4640-85a5-1548e11a19c8" name="Default" comment="" />
     <ignored path="HitchedInBackend.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382767101274" ignored="false" />
+    <file path="/Dummy.txt" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382805505750" ignored="false" />
     <file path="/Gemfile" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382755812199" ignored="false" />
     <file path="/mappings_controller.rb" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382784429030" ignored="false" />
     <file path="/20131026023743_create_mappings.rb" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382766308997" ignored="false" />
     <file path="/mapping.rb" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382766953523" ignored="false" />
-    <file path="$PROJECT_DIR$/config/routes.rb" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382767118692" ignored="false" />
+    <file path="$PROJECT_DIR$/config/routes.rb" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382805555503" ignored="false" />
     <file path="/maptolinkedins_controller.rb" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382768328162" ignored="false" />
+    <file path="/changetypes_controller.rb" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382806769853" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,28 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapping.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/mapping.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="19" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131026055835_create_maptolinkedins.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131026055835_create_maptolinkedins.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="32" selection-start="84" selection-end="98" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="maptolinkedin.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/maptolinkedin.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="3" column="88" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,7 +52,34 @@
       <file leaf-file-name="maptolinkedins_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/maptolinkedins_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="25" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0">
+            <state line="61" column="42" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131026163905_create_changetypes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131026163905_create_changetypes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="12" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changetype.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/changetype.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changetypes_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/changetypes_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="43" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.9065934">
               <folding />
             </state>
           </provider>
@@ -84,37 +94,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mappings_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mappings_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mappings_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="41" selection-start="193" selection-end="193" vertical-scroll-proportion="0.25679758">
+            <state line="30" column="37" selection-start="409" selection-end="877" vertical-scroll-proportion="-11.6">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="mapping.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/mapping.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="68" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+            <state line="3" column="19" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/mappings/new.html.erb">
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/mappings/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="7" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,6 +144,7 @@
         <option value="$PROJECT_DIR$/db/migrate/20131026055835_create_maptolinkedins.rb" />
         <option value="$PROJECT_DIR$/app/controllers/maptolinkedins_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/mappings_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/changetypes_controller.rb" />
       </list>
     </option>
   </component>
@@ -524,11 +526,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2530675" sideWeight="0.6807432" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2530675" sideWeight="0.6942568" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31925675" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30574325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -602,19 +604,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/mappings/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="631" selection-end="631" vertical-scroll-proportion="-16.346153">
-          <folding>
-            <marker date="1382755133883" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1382755133883" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1382755133883" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1382755133883" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1382755133883" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/mappings/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="8" selection-start="50" selection-end="50" vertical-scroll-proportion="5.1538463">
@@ -653,20 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/mapping.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/maptolinkedin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131026055835_create_maptolinkedins.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="32" selection-start="84" selection-end="98" vertical-scroll-proportion="0.0">
@@ -688,16 +663,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/maptolinkedin.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="88" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/maptolinkedins_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="25" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0">
+        <state line="61" column="42" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131026163905_create_changetypes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/changetype.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mappings_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="41" selection-start="193" selection-end="193" vertical-scroll-proportion="0.25679758">
+        <state line="30" column="37" selection-start="409" selection-end="877" vertical-scroll-proportion="-11.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/mapping.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/changetypes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="43" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.9065934">
           <folding />
         </state>
       </provider>

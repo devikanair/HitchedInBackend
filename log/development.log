@@ -1537,3 +1537,272 @@ Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 1.0ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2013-10-26 03:46:45 -0700
 Served asset /rails.png - 200 OK (198ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 03:51:56 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 35ms (Views: 3.0ms | ActiveRecord: 2.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-10-26 09:39:17 -0700
+Served asset /rails.png - 200 OK (546ms)
+
+
+Started GET "/changetypes" for 127.0.0.1 at 2013-10-26 09:40:35 -0700
+Processing by ChangetypesController#index as HTML
+Completed 500 Internal Server Error in 2333ms
+
+ActiveRecord::StatementInvalid (Could not find table 'changetypes'):
+  app/controllers/changetypes_controller.rb:5:in `index'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (49.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1109.1ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-26 09:41:36 -0700
+Processing by MappingsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+  [1m[36mEXPLAIN (0.0ms)[0m  [1mEXPLAIN QUERY PLAN SELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+EXPLAIN for: SELECT "maptolinkedins".* FROM "maptolinkedins" 
+0|0|0|SCAN TABLE maptolinkedins (~1000000 rows)
+
+Completed 200 OK in 1206ms (Views: 343.0ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/changetypes.json" for 127.0.0.1 at 2013-10-26 09:41:46 -0700
+Processing by ChangetypesController#index as JSON
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'changetypes'):
+  app/controllers/changetypes_controller.rb:5:in `index'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (156.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (23.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (333.0ms)
+
+
+Started GET "/changetypes.html" for 127.0.0.1 at 2013-10-26 09:42:00 -0700
+Processing by ChangetypesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'changetypes'):
+  app/controllers/changetypes_controller.rb:5:in `index'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (48.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (107.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (241.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMappings (20131026023743)
+Migrating to CreateMaptolinkedins (20131026055835)
+Migrating to CreateChangetypes (20131026163905)
+  [1m[35m (66.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (37.0ms)[0m  CREATE TABLE "changetypes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "random" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131026163905')[0m
+  [1m[35m (322.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/changetypes.html" for 127.0.0.1 at 2013-10-26 09:44:05 -0700
+Processing by ChangetypesController#index as HTML
+  [1m[35mChangetype Load (0.0ms)[0m  SELECT "changetypes".* FROM "changetypes" 
+  Rendered changetypes/index.html.erb within layouts/application (320.0ms)
+Compiled changetypes.css  (2368ms)  (pid 5824)
+Compiled maptolinkedins.css  (315ms)  (pid 5824)
+Compiled application.css  (3800ms)  (pid 5824)
+Compiled changetypes.js  (2588ms)  (pid 5824)
+Compiled maptolinkedins.js  (302ms)  (pid 5824)
+Compiled application.js  (3337ms)  (pid 5824)
+Completed 200 OK in 11517ms (Views: 11512.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/changetypes.css?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /changetypes.css - 200 OK (51ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/maptolinkedins.css?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /maptolinkedins.css - 200 OK (3ms)
+
+
+Started GET "/assets/mappings.css?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /mappings.css - 200 OK (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /jquery.js - 200 OK (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /scaffolds.css - 200 OK (6ms)
+
+
+Started GET "/assets/changetypes.js?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /changetypes.js - 200 OK (5ms)
+
+
+Started GET "/assets/mappings.js?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /mappings.js - 200 OK (5ms)
+
+
+Started GET "/assets/maptolinkedins.js?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /maptolinkedins.js - 200 OK (18ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-26 09:44:18 -0700
+Served asset /application.js - 200 OK (127ms)
+
+
+Started GET "/changetypes.html" for 127.0.0.1 at 2013-10-26 09:51:05 -0700
+Connecting to database specified by database.yml
+Processing by ChangetypesController#index as HTML
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+  Rendered changetypes/index.html.erb within layouts/application (82.0ms)
+Completed 500 Internal Server Error in 1016ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    8:     <th></th>
+    9:   </tr>
+    10: 
+    11: <% @changetypes.each do |changetype| %>
+    12:   <tr>
+    13:     <td><%= changetype.random %></td>
+    14:     <td><%= link_to 'Show', changetype %></td>
+  app/views/changetypes/index.html.erb:11:in `_app_views_changetypes_index_html_erb__87104_46964340'
+  app/controllers/changetypes_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.0ms)
+
+
+Started GET "/changetypes.json" for 127.0.0.1 at 2013-10-26 09:51:22 -0700
+Processing by ChangetypesController#index as JSON
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/changetypes.json" for 127.0.0.1 at 2013-10-26 09:52:52 -0700
+Processing by ChangetypesController#create as JSON
+  Parameters: {"changetypes"=>{"bluetooth"=>"RamyasAndroid", "comment"=>"R"}}
+WARNING: Can't verify CSRF token authenticity
+{"bluetooth"=>"RamyasAndroid", "comment"=>"R"}
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/changetypes.json" for 127.0.0.1 at 2013-10-26 09:54:17 -0700
+Processing by ChangetypesController#create as JSON
+  Parameters: {"bluetooth"=>"RamyasAndroid", "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+RamyasAndroid
+R
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 24ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 09:59:49 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 18ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/changetypes.json" for 127.0.0.1 at 2013-10-26 10:00:17 -0700
+Processing by ChangetypesController#create as JSON
+  Parameters: {"profile"=>"devikanair", "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+devikanair
+R
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."linkedinprofile" = 'devikanair' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  UPDATE "maptolinkedins" SET "comment" = 'R', "updated_at" = '2013-10-26 17:00:17.707140' WHERE "maptolinkedins"."id" = 1
+  [1m[36m (151.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 257ms (Views: 1.0ms | ActiveRecord: 152.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 10:00:20 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 10:00:24 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/changetypes.json" for 127.0.0.1 at 2013-10-26 10:01:03 -0700
+Processing by ChangetypesController#create as JSON
+  Parameters: {"profile"=>"RamyasAndroid", "comment"=>"J"}
+WARNING: Can't verify CSRF token authenticity
+RamyasAndroid
+J
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."linkedinprofile" = 'RamyasAndroid' LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `comment=' for nil:NilClass):
+  app/controllers/changetypes_controller.rb:22:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 10:01:14 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 10:01:18 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 10:01:30 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 10:01:33 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/changetypes.json" for 127.0.0.1 at 2013-10-26 10:01:39 -0700
+Processing by ChangetypesController#create as JSON
+  Parameters: {"profile"=>"ramya201", "comment"=>"J"}
+WARNING: Can't verify CSRF token authenticity
+ramya201
+J
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."linkedinprofile" = 'ramya201' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mUPDATE "maptolinkedins" SET "comment" = 'J', "updated_at" = '2013-10-26 17:01:39.439814' WHERE "maptolinkedins"."id" = 2[0m
+  [1m[35m (141.0ms)[0m  commit transaction
+Completed 200 OK in 147ms (Views: 0.0ms | ActiveRecord: 143.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 10:01:43 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
