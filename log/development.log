@@ -1806,3 +1806,115 @@ Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 10:01:43 -0700
 Processing by MaptolinkedinsController#index as JSON
   [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
 Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMappings (20131026023743)
+Migrating to CreateMaptolinkedins (20131026055835)
+Migrating to CreateChangetypes (20131026163905)
+Migrating to CreateRecruiterfilters (20131026182458)
+  [1m[35m (19.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "recruiterfilters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131026182458')[0m
+  [1m[35m (183.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 11:40:47 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 18ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 11:44:10 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 11:45:07 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid", "filters"=>"Sleeping"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bluetooth", nil], ["comment", nil], ["created_at", Sat, 26 Oct 2013 18:45:07 UTC +00:00], ["linkedinprofile", nil], ["name", nil], ["picurl", nil], ["profiletitle", nil], ["skills", nil], ["updated_at", Sat, 26 Oct 2013 18:45:07 UTC +00:00]]
+  [1m[35m (167.0ms)[0m  commit transaction
+Completed 201 Created in 207ms (Views: 2.0ms | ActiveRecord: 168.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 11:45:22 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid", "filters"=>"Java"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["bluetooth", nil], ["comment", nil], ["created_at", Sat, 26 Oct 2013 18:45:22 UTC +00:00], ["linkedinprofile", nil], ["name", nil], ["picurl", nil], ["profiletitle", nil], ["skills", nil], ["updated_at", Sat, 26 Oct 2013 18:45:22 UTC +00:00]]
+  [1m[36m (151.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 156ms (Views: 1.0ms | ActiveRecord: 153.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 11:45:47 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid", "filters"=>"Java"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bluetooth", nil], ["comment", nil], ["created_at", Sat, 26 Oct 2013 18:45:47 UTC +00:00], ["linkedinprofile", nil], ["name", nil], ["picurl", nil], ["profiletitle", nil], ["skills", nil], ["updated_at", Sat, 26 Oct 2013 18:45:47 UTC +00:00]]
+  [1m[35m (133.0ms)[0m  commit transaction
+Completed 201 Created in 155ms (Views: 3.0ms | ActiveRecord: 136.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 11:46:02 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recruiterfilters.json" for 127.0.0.1 at 2013-10-26 11:46:29 -0700
+Processing by RecruiterfiltersController#index as JSON
+  [1m[35mRecruiterfilter Load (0.0ms)[0m  SELECT "recruiterfilters".* FROM "recruiterfilters" 
+Completed 200 OK in 4ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/recruiterfilters.json" for 127.0.0.1 at 2013-10-26 11:47:46 -0700
+Processing by RecruiterfiltersController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid", "filters"=>"Java"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/recruiterfilters.json" for 127.0.0.1 at 2013-10-26 11:47:58 -0700
+Processing by RecruiterfiltersController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid", "filters"=>"Sleeping"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/recruiterfilters.json" for 127.0.0.1 at 2013-10-26 11:48:13 -0700
+Processing by RecruiterfiltersController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid", "filters"=>"Sleeping"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 26ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/recruiterfilters.json" for 127.0.0.1 at 2013-10-26 11:48:35 -0700
+Processing by RecruiterfiltersController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid", "filters"=>"Sleeping"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 23ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/recruiterfilters.json" for 127.0.0.1 at 2013-10-26 11:48:45 -0700
+Processing by RecruiterfiltersController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid", "filters"=>"Android"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 3ms (Views: 0.0ms | ActiveRecord: 1.0ms)

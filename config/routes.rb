@@ -1,4 +1,7 @@
 HitchedInBackend::Application.routes.draw do
+  resources :recruiterfilters
+
+
   resources :changetypes
 
 

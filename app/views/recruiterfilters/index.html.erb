@@ -1,0 +1,21 @@
+<h1>Listing recruiterfilters</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @recruiterfilters.each do |recruiterfilter| %>
+  <tr>
+    <td><%= link_to 'Show', recruiterfilter %></td>
+    <td><%= link_to 'Edit', edit_recruiterfilter_path(recruiterfilter) %></td>
+    <td><%= link_to 'Destroy', recruiterfilter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Recruiterfilter', new_recruiterfilter_path %>
