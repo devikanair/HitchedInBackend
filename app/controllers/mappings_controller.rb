@@ -2,8 +2,8 @@ class MappingsController < ApplicationController
   # GET /mappings
   # GET /mappings.json
   def index
-    @myarray = ['DevikasIPhone','RamyasAndroid']
-    @maptolinkedins = Maptolinkedin.find_all_by_bluetooth(@myarray)
+    #@myarray = ['DevikasIPhone','RamyasAndroid']
+    @maptolinkedins = Maptolinkedin.all #find_all_by_bluetooth(@myarray)
 
     respond_to do |format|
       format.html # index.html.erb
