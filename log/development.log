@@ -1147,3 +1147,374 @@ Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 23:19:55 -0700
 Processing by MappingsController#index as JSON
   [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
 Completed 200 OK in 71ms (Views: 3.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 23:47:35 -0700
+Processing by MappingsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" = 'DevikasIPhone' LIMIT 1[0m
+Completed 200 OK in 295ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 23:51:31 -0700
+Processing by MappingsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone') LIMIT 1
+Completed 200 OK in 44ms (Views: 1.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 23:51:34 -0700
+Processing by MappingsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone') LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:51:39 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 23:51:54 -0700
+Processing by MappingsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid') LIMIT 1[0m
+Completed 200 OK in 35ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 23:51:56 -0700
+Processing by MappingsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid') LIMIT 1
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 23:52:12 -0700
+Processing by MappingsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 91ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 23:56:07 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 50ms (Views: 2.0ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 23:59:08 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+I am here
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 45ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 23:59:39 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+#<Mapping:0x4253058>
+I am here
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 56ms (Views: 2.0ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:00:43 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+{"action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 45ms (Views: 1.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:01:23 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+{"action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:02:07 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+{"action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 61ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:03:06 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}}
+WARNING: Can't verify CSRF token authenticity
+{"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:04:37 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+{"action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:05:10 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+{"action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:05:29 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+{"action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:07:05 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+{"action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:08:48 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+{"action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 14ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:15:28 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"DevikasIPhone"}}
+WARNING: Can't verify CSRF token authenticity
+{"maptolinkedin"=>{"bluetooth"=>"DevikasIPhone"}, "action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:16:18 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"'DevikasIPhone','RamyasAndroid"}
+WARNING: Can't verify CSRF token authenticity
+{"bluetooth"=>"'DevikasIPhone','RamyasAndroid", "action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:16:39 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"'DevikasIPhone','RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+{"bluetooth"=>"'DevikasIPhone','RamyasAndroid'", "action"=>"create", "controller"=>"mappings", "format"=>"json"}
+I am here
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:17:09 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"'DevikasIPhone','RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+#<Mapping:0x4262e68>
+I am here
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 50ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:17:39 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"'DevikasIPhone','RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `stringify_keys' for "'DevikasIPhone','RamyasAndroid'":String):
+  app/controllers/mappings_controller.rb:17:in `new'
+  app/controllers/mappings_controller.rb:17:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 00:22:23 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"'DevikasIPhone','RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+'DevikasIPhone','RamyasAndroid'
+I am here
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 33ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 01:10:12 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"'DevikasIPhone','RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+'DevikasIPhone','RamyasAndroid'
+I am here
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 32ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 01:12:14 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"'DevikasIPhone','RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+'DevikasIPhone','RamyasAndroid'
+I am here
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 01:19:48 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"'DevikasIPhone','RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+'DevikasIPhone','RamyasAndroid'
+I am here
+  [1m[36mMaptolinkedin Load (2.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('''DevikasIPhone''', '''RamyasAndroid''')[0m
+Completed 200 OK in 18ms (Views: 1.0ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 01:20:23 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"'DevikasIPhone','RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+'DevikasIPhone','RamyasAndroid'
+["'DevikasIPhone'", "'RamyasAndroid'"]
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('''DevikasIPhone''', '''RamyasAndroid''')
+Completed 200 OK in 13ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 01:21:50 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 32ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 01:22:07 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone"]
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone')
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 01:47:14 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 01:59:20 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid'"]
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid''')
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 02:00:24 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid'"]
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid''')[0m
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 02:00:45 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid'"]
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid''')
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 02:05:15 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid'"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid'"]
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid''')[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-26 02:05:58 -0700
+Processing by MappingsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 8ms (Views: 4.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 02:06:17 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 02:12:04 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 02:17:29 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 02:18:40 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 02:36:59 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-26 02:37:19 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"DevikasIPhone,RamyasAndroid"}
+WARNING: Can't verify CSRF token authenticity
+["DevikasIPhone", "RamyasAndroid"]
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.0ms)

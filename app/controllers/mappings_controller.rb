@@ -2,7 +2,8 @@ class MappingsController < ApplicationController
   # GET /mappings
   # GET /mappings.json
   def index
-    @maptolinkedins = Maptolinkedin.all
+    @myarray = ['DevikasIPhone','RamyasAndroid']
+    @maptolinkedins = Maptolinkedin.find_all_by_bluetooth(@myarray)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,18 +14,19 @@ class MappingsController < ApplicationController
 # POST /mappings
 # POST /mappings.json
   def create
-    @myarray = Mapping.new(params[:bluetooth])
-    @maptolinkedins = Maptolinkedin.all
+    @myarray = params[:bluetooth]
 
-    puts myparams
+    @arrayofbluetooths = @myarray.split(/,/)
+    logger.info(@arrayofbluetooths)
+    #@maptolinkedin = Maptolinkedin.new(params[:maptolinkedin])
+
+    #No matter what the params are
+    #@myarray = ['DevikasIPhone','RamyasAndroid']
+    @maptolinkedins = Maptolinkedin.find_all_by_bluetooth(@arrayofbluetooths)
+
     respond_to do |format|
-      if @mapping.save
-        format.html { redirect_to @mapping, notice: 'Mapping was successfully created.' }
-        format.json { render json: @mapping, status: :created, location: @mapping }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @mapping.errors, status: :unprocessable_entity }
-      end
+      format.html # index.html.erb
+      format.json { render json: @maptolinkedins }
     end
   end
 
