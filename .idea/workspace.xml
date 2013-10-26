@@ -5,6 +5,7 @@
     <ignored path="HitchedInBackend.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382755048183" ignored="false" />
+    <file path="/Gemfile" changelist="165ac6ab-9ca8-4640-85a5-1548e11a19c8" time="1382755812199" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mappings_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mappings_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mappings_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="73" selection-start="1214" selection-end="1216" vertical-scroll-proportion="0.33128834">
+            <state line="50" column="73" selection-start="1214" selection-end="1216" vertical-scroll-proportion="-4.32">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="68" selection-start="228" selection-end="228" vertical-scroll-proportion="0.6780627">
               <folding />
             </state>
           </provider>
@@ -115,6 +125,7 @@
         <option value="$PROJECT_DIR$/app/views/mappings/show.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20131026023743_create_mappings.rb" />
         <option value="$PROJECT_DIR$/app/models/mapping.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -619,7 +630,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mappings_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="73" selection-start="1214" selection-end="1216" vertical-scroll-proportion="0.33128834">
+        <state line="50" column="73" selection-start="1214" selection-end="1216" vertical-scroll-proportion="-4.32">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="68" selection-start="228" selection-end="228" vertical-scroll-proportion="0.6780627">
           <folding />
         </state>
       </provider>
