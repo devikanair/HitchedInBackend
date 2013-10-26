@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-HitchedInBackend::Application.config.secret_token = 'f6137d0e295a9dc5ab18d730edacc2c31e52b513f759e4c52c51fc36b29a1ddcac5882d5b38332a18650d2a40b82b9b235d8df51b9afa9c732ce4d20ee8ec5ca'
+HitchedInBackend::Application.config.secret_token = '9cd4362394d4c329418664a5d909dce94c2b3cfe0db10f4f52cff0f228954be9165c250957f7cabcaad6f3ab6c8ffec15f3d0e2bc45dbd4649c4d5601685747c'
