@@ -1,0 +1,35 @@
+<h1>Listing maptolinkedins</h1>
+
+<table>
+  <tr>
+    <th>Bluetooth</th>
+    <th>Linkedinprofile</th>
+    <th>Name</th>
+    <th>Profiletitle</th>
+    <th>Picurl</th>
+    <th>Skills</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @maptolinkedins.each do |maptolinkedin| %>
+  <tr>
+    <td><%= maptolinkedin.bluetooth %></td>
+    <td><%= maptolinkedin.linkedinprofile %></td>
+    <td><%= maptolinkedin.name %></td>
+    <td><%= maptolinkedin.profiletitle %></td>
+    <td><%= maptolinkedin.picurl %></td>
+    <td><%= maptolinkedin.skills %></td>
+    <td><%= maptolinkedin.comment %></td>
+    <td><%= link_to 'Show', maptolinkedin %></td>
+    <td><%= link_to 'Edit', edit_maptolinkedin_path(maptolinkedin) %></td>
+    <td><%= link_to 'Destroy', maptolinkedin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Maptolinkedin', new_maptolinkedin_path %>

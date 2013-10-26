@@ -11,11 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131026023743) do
+ActiveRecord::Schema.define(:version => 20131026055835) do
 
   create_table "mappings", :force => true do |t|
     t.string   "bluetooth"
     t.string   "linkedinprofile"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "maptolinkedins", :force => true do |t|
+    t.string   "bluetooth"
+    t.string   "linkedinprofile"
+    t.string   "name"
+    t.string   "profiletitle"
+    t.string   "picurl"
+    t.string   "skills"
+    t.string   "comment"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end

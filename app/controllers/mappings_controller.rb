@@ -2,11 +2,29 @@ class MappingsController < ApplicationController
   # GET /mappings
   # GET /mappings.json
   def index
-    @mappings = Mapping.all
+    @maptolinkedins = Maptolinkedin.all
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @mappings }
+      format.json { render json: @maptolinkedins }
+    end
+  end
+
+# POST /mappings
+# POST /mappings.json
+  def create
+    @myarray = Mapping.new(params[:bluetooth])
+    @maptolinkedins = Maptolinkedin.all
+
+    puts myparams
+    respond_to do |format|
+      if @mapping.save
+        format.html { redirect_to @mapping, notice: 'Mapping was successfully created.' }
+        format.json { render json: @mapping, status: :created, location: @mapping }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @mapping.errors, status: :unprocessable_entity }
+      end
     end
   end
 
@@ -35,22 +53,6 @@ class MappingsController < ApplicationController
   # GET /mappings/1/edit
   def edit
     @mapping = Mapping.find(params[:id])
-  end
-
-  # POST /mappings
-  # POST /mappings.json
-  def create
-    @mapping = Mapping.new(params[:mapping])
-
-    respond_to do |format|
-      if @mapping.save
-        format.html { redirect_to @mapping, notice: 'Mapping was successfully created.' }
-        format.json { render json: @mapping, status: :created, location: @mapping }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @mapping.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   # PUT /mappings/1

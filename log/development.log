@@ -461,3 +461,689 @@ Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 19:42:33 -0700
 Processing by MappingsController#index as JSON
   [1m[36mMapping Load (1.0ms)[0m  [1mSELECT "mappings".* FROM "mappings" [0m
 Completed 200 OK in 33ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-10-25 20:35:40 -0700
+Served asset /rails.png - 200 OK (1ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 21:27:28 -0700
+Connecting to database specified by database.yml
+Processing by MappingsController#index as JSON
+  [1m[36mMapping Load (1.0ms)[0m  [1mSELECT "mappings".* FROM "mappings" [0m
+Completed 200 OK in 948ms (Views: 30.0ms | ActiveRecord: 177.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:28:29 -0700
+Processing by MappingsController#create as JSON
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (88.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:28:29 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:28:29 UTC +00:00]]
+  [1m[35m (152.0ms)[0m  commit transaction
+Completed 201 Created in 253ms (Views: 3.0ms | ActiveRecord: 240.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 21:30:09 -0700
+Connecting to database specified by database.yml
+Processing by MappingsController#index as JSON
+  [1m[36mMapping Load (0.0ms)[0m  [1mSELECT "mappings".* FROM "mappings" [0m
+Completed 200 OK in 133ms (Views: 10.0ms | ActiveRecord: 12.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:30:25 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"mapping"=>"{\"bluetooth\": \"sample2\", \"linkedinprofile\": \"Anvi\"} "}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `stringify_keys' for "{\"bluetooth\": \"sample2\", \"linkedinprofile\": \"Anvi\"} ":String):
+  app/controllers/mappings_controller.rb:43:in `new'
+  app/controllers/mappings_controller.rb:43:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (86.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 21:30:31 -0700
+Processing by MappingsController#index as JSON
+  [1m[35mMapping Load (1.0ms)[0m  SELECT "mappings".* FROM "mappings" 
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 21:30:32 -0700
+Processing by MappingsController#index as JSON
+  [1m[36mMapping Load (1.0ms)[0m  [1mSELECT "mappings".* FROM "mappings" [0m
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:30:59 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"mapping"=>"{\"bluetooth\": \"sample2\", \"linkedinprofile\": \"Anvi\"} "}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `stringify_keys' for "{\"bluetooth\": \"sample2\", \"linkedinprofile\": \"Anvi\"} ":String):
+  app/controllers/mappings_controller.rb:43:in `new'
+  app/controllers/mappings_controller.rb:43:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:32:26 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"mapping"=>"{bluetooth: sample2, linkedinprofile: Anvi} "}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `stringify_keys' for "{bluetooth: sample2, linkedinprofile: Anvi} ":String):
+  app/controllers/mappings_controller.rb:43:in `new'
+  app/controllers/mappings_controller.rb:43:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:32:52 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"mapping"=>"{bluetooth: sample2, linkedinprofile: Anvi} "}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `stringify_keys' for "{bluetooth: sample2, linkedinprofile: Anvi} ":String):
+  app/controllers/mappings_controller.rb:43:in `new'
+  app/controllers/mappings_controller.rb:43:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:33:22 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"sample2", "linkedinprofile"=>"nandita", "mapping"=>{"bluetooth"=>"sample2", "linkedinprofile"=>"nandita"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (71.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", "sample2"], ["created_at", Sat, 26 Oct 2013 04:33:23 UTC +00:00], ["linkedinprofile", "nandita"], ["updated_at", Sat, 26 Oct 2013 04:33:23 UTC +00:00]]
+  [1m[35m (307.0ms)[0m  commit transaction
+Completed 201 Created in 392ms (Views: 4.0ms | ActiveRecord: 378.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:36:23 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"{\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\"}"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (22.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:36:23 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:36:23 UTC +00:00]]
+  [1m[36m (295.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 323ms (Views: 2.0ms | ActiveRecord: 317.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:37:40 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::LoadError (795: unexpected token at '{bluetooth: sample2,
+linkedinprofile: nandita2} '):
+  json (1.8.1) lib/json/common.rb:155:in `parse'
+  json (1.8.1) lib/json/common.rb:155:in `parse'
+  multi_json (1.8.2) lib/multi_json/adapters/json_common.rb:16:in `load'
+  multi_json (1.8.2) lib/multi_json/adapter.rb:20:in `load'
+  multi_json (1.8.2) lib/multi_json.rb:120:in `load'
+  activesupport (3.2.14) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__254318095__call__945821583__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:39:06 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\""}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:39:06 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:39:06 UTC +00:00]]
+  [1m[35m (498.0ms)[0m  commit transaction
+Completed 201 Created in 507ms (Views: 2.0ms | ActiveRecord: 500.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:39:25 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\""}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:39:25 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:39:25 UTC +00:00]]
+  [1m[36m (312.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 319ms (Views: 1.0ms | ActiveRecord: 314.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:41:26 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\""}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:41:26 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:41:26 UTC +00:00]]
+  [1m[35m (440.0ms)[0m  commit transaction
+Completed 201 Created in 450ms (Views: 1.0ms | ActiveRecord: 442.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:46:41 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"{\"bluetooth\":\"sampleb\",\"linkedinprofle\":\"anvi\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:46:41 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:46:41 UTC +00:00]]
+  [1m[36m (167.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 173ms (Views: 2.0ms | ActiveRecord: 169.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:46:59 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"{\"bluetooth\":\"sampleb\",\"linkedinprofle\":\"anvi\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (8.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:46:59 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:46:59 UTC +00:00]]
+  [1m[35m (166.0ms)[0m  commit transaction
+Completed 201 Created in 178ms (Views: 1.0ms | ActiveRecord: 174.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:47:40 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"sample2", "linkedinprofile"=>"nandita2", "mapping"=>{"bluetooth"=>"sample2", "linkedinprofile"=>"nandita2"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", "sample2"], ["created_at", Sat, 26 Oct 2013 04:47:40 UTC +00:00], ["linkedinprofile", "nandita2"], ["updated_at", Sat, 26 Oct 2013 04:47:40 UTC +00:00]]
+  [1m[36m (296.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 304ms (Views: 1.0ms | ActiveRecord: 298.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:50:28 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\", \"mapping\"=>{\"bluetooth\"=>\"sample2\", \"linkedinprofile\"=>\"ramya\"}"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:50:28 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:50:28 UTC +00:00]]
+  [1m[35m (395.0ms)[0m  commit transaction
+Completed 201 Created in 403ms (Views: 1.0ms | ActiveRecord: 397.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:54:35 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\", \"mapping\"=>{\"bluetooth\"=>\"sample2\", \"linkedinprofile\"=>\"ramya\"}"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:54:35 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:54:35 UTC +00:00]]
+  [1m[36m (383.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 389ms (Views: 1.0ms | ActiveRecord: 385.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:56:28 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"{\"bluetooth\":\"sampleb\",\"linkedinprofle\":\"anvi\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 04:56:28 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 04:56:28 UTC +00:00]]
+  [1m[35m (150.0ms)[0m  commit transaction
+Completed 201 Created in 156ms (Views: 1.0ms | ActiveRecord: 152.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:58:04 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+
+
+MultiJson::LoadError (795: unexpected token at '{bluetooth: "sample2",
+"linkedinprofile": "nandita2"} '):
+  json (1.8.1) lib/json/common.rb:155:in `parse'
+  json (1.8.1) lib/json/common.rb:155:in `parse'
+  multi_json (1.8.2) lib/multi_json/adapters/json_common.rb:16:in `load'
+  multi_json (1.8.2) lib/multi_json/adapter.rb:20:in `load'
+  multi_json (1.8.2) lib/multi_json.rb:120:in `load'
+  activesupport (3.2.14) lib/active_support/json/decoding.rb:15:in `decode'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__254318095__call__945821583__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 21:58:17 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"sample2", "linkedinprofile"=>"nandita2", "mapping"=>{"bluetooth"=>"sample2", "linkedinprofile"=>"nandita2"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", "sample2"], ["created_at", Sat, 26 Oct 2013 04:58:17 UTC +00:00], ["linkedinprofile", "nandita2"], ["updated_at", Sat, 26 Oct 2013 04:58:17 UTC +00:00]]
+  [1m[36m (207.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 226ms (Views: 2.0ms | ActiveRecord: 214.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:01:40 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\", \"mapping\"=>{\"bluetooth\"=>\"sample2\", \"linkedinprofile\"=>\"ramya\"}"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 05:01:40 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:01:40 UTC +00:00]]
+  [1m[35m (165.0ms)[0m  commit transaction
+Completed 201 Created in 172ms (Views: 1.0ms | ActiveRecord: 168.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:02:18 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\", \"mapping\"=>{\"bluetooth\"=>\"sample2\", \"linkedinprofile\"=>\"ramya\"}"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 05:02:18 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:02:18 UTC +00:00]]
+  [1m[36m (282.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 350ms (Views: 2.0ms | ActiveRecord: 287.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:04:17 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\", \"mapping\"=>{\"bluetooth\"=>\"sample2\", \"linkedinprofile\"=>\"ramya\"}"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 05:04:17 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:04:17 UTC +00:00]]
+  [1m[35m (177.0ms)[0m  commit transaction
+Completed 201 Created in 204ms (Views: 2.0ms | ActiveRecord: 181.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:04:35 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"sample2", "linkedinprofile"=>"nandita2", "mapping"=>{"bluetooth"=>"sample2", "linkedinprofile"=>"nandita2"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", "sample2"], ["created_at", Sat, 26 Oct 2013 05:04:35 UTC +00:00], ["linkedinprofile", "nandita2"], ["updated_at", Sat, 26 Oct 2013 05:04:35 UTC +00:00]]
+  [1m[36m (189.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 201ms (Views: 2.0ms | ActiveRecord: 194.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:06:01 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\", \"mapping\"=>{\"bluetooth\"=>\"sample2\", \"linkedinprofile\"=>\"ramya\"}"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 05:06:01 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:06:01 UTC +00:00]]
+  [1m[35m (145.0ms)[0m  commit transaction
+Completed 201 Created in 155ms (Views: 2.0ms | ActiveRecord: 148.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:07:10 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"{\"bluetooth\":\"sampleb\",\"linkedinprofle\":\"anvi\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 05:07:10 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:07:10 UTC +00:00]]
+  [1m[36m (176.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 182ms (Views: 2.0ms | ActiveRecord: 178.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:07:48 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"sample2", "linkedinprofile"=>"nandita2", "mapping"=>{"bluetooth"=>"sample2", "linkedinprofile"=>"nandita2"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", "sample2"], ["created_at", Sat, 26 Oct 2013 05:07:48 UTC +00:00], ["linkedinprofile", "nandita2"], ["updated_at", Sat, 26 Oct 2013 05:07:48 UTC +00:00]]
+  [1m[35m (296.0ms)[0m  commit transaction
+Completed 201 Created in 304ms (Views: 1.0ms | ActiveRecord: 298.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:08:47 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"\"bluetooth\""=>">\"sample2\", \"linkedinprofile\"=>\"ramya\", \"mapping\"=>{\"bluetooth\"=>\"sample2\", \"linkedinprofile\"=>\"ramya\"}"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (245.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 05:08:47 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:08:47 UTC +00:00]]
+  [1m[36m (150.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 406ms (Views: 2.0ms | ActiveRecord: 395.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-10-25 22:12:31 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (7ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 22:12:37 -0700
+Processing by MappingsController#index as JSON
+  [1m[36mMapping Load (1.0ms)[0m  [1mSELECT "mappings".* FROM "mappings" [0m
+Completed 200 OK in 163ms (Views: 26.0ms | ActiveRecord: 12.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:14:02 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"{\"bluetooth\":\"sampleb\",\"linkedinprofle\":\"anvi\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (19.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 05:14:02 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:14:02 UTC +00:00]]
+  [1m[35m (365.0ms)[0m  commit transaction
+Completed 201 Created in 393ms (Views: 3.0ms | ActiveRecord: 384.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:19:07 -0700
+Connecting to database specified by database.yml
+Processing by MappingsController#create as JSON
+  Parameters: {"id"=>"12345", "stringdata"=>"AndDev is Cool!"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 137ms
+
+NameError (undefined local variable or method `console' for #<MappingsController:0x48e7798>):
+  app/controllers/mappings_controller.rb:45:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:20:20 -0700
+Connecting to database specified by database.yml
+Processing by MappingsController#create as JSON
+  Parameters: {"id"=>"12345", "stringdata"=>"AndDev is Cool!"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (29.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 05:20:23 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:20:23 UTC +00:00]]
+  [1m[36m (201.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 406ms (Views: 3.0ms | ActiveRecord: 285.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:21:10 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"sampleb", "linkedinprofle"=>"anvi"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 05:21:10 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:21:10 UTC +00:00]]
+  [1m[35m (157.0ms)[0m  commit transaction
+Completed 201 Created in 165ms (Views: 2.0ms | ActiveRecord: 159.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:22:29 -0700
+Connecting to database specified by database.yml
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"sampleb", "linkedinprofle"=>"anvi"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 86ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: linkedinprofle, action, controller, format):
+  app/controllers/mappings_controller.rb:44:in `new'
+  app/controllers/mappings_controller.rb:44:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (70.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:23:41 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"bluetooth"=>"sampleb"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: action, controller, format):
+  app/controllers/mappings_controller.rb:44:in `new'
+  app/controllers/mappings_controller.rb:44:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:28:13 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"mapping"=>{"bluetooth"=>"sampleb"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: mapping, action, controller, format):
+  app/controllers/mappings_controller.rb:44:in `new'
+  app/controllers/mappings_controller.rb:44:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:29:11 -0700
+Connecting to database specified by database.yml
+Processing by MappingsController#create as JSON
+  Parameters: {"mapping"=>{"bluetooth"=>"sampleb"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (47.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", "sampleb"], ["created_at", Sat, 26 Oct 2013 05:29:13 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 05:29:13 UTC +00:00]]
+  [1m[36m (168.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 309ms (Views: 2.0ms | ActiveRecord: 228.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:30:09 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"mapping"=>{"bluetooth"=>"sampleb", "linkedinprofile"=>"anvi"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (35.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", "sampleb"], ["created_at", Sat, 26 Oct 2013 05:30:09 UTC +00:00], ["linkedinprofile", "anvi"], ["updated_at", Sat, 26 Oct 2013 05:30:09 UTC +00:00]]
+  [1m[35m (186.0ms)[0m  commit transaction
+Completed 201 Created in 232ms (Views: 6.0ms | ActiveRecord: 221.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (71.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (550.0ms)[0m  DROP TABLE "mappings"
+  [1m[36m (248.0ms)[0m  [1mCREATE TABLE "mappings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "bluetooth" varchar(255), "linkedinprofile" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 22:48:25 -0700
+Connecting to database specified by database.yml
+Processing by MappingsController#index as JSON
+  [1m[36mMapping Load (1.0ms)[0m  [1mSELECT "mappings".* FROM "mappings" [0m
+Completed 200 OK in 110ms (Views: 0.0ms | ActiveRecord: 14.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 22:55:00 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"mapping"=>{"bluetooth"=>"DevikasIPhone", "linkedinprofile"=>"devikanair", "name"=>"Devika Nair", "profiletitle"=>"TA at CMU", "skills"=>"Java,Sleeping", "picurl"=>"https://fbcdn-photos-h-a.akamaihd.net/hphotos-ak-prn2/s720x720/1395843_10151633982246256_2073503650_n.jpg"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 18ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: name):
+  app/controllers/mappings_controller.rb:44:in `new'
+  app/controllers/mappings_controller.rb:44:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMappings (20131026023743)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMappings (20131026023743)
+Migrating to CreateMaptolinkedins (20131026055835)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMappings (20131026023743)
+Migrating to CreateMaptolinkedins (20131026055835)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  CREATE TABLE "maptolinkedins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "bluetooth" varchar(255), "linkedinprofile" varchar(255), "name" varchar(255), "profiletitle" varchar(255), "picurl" varchar(255), "skills" varchar(255), "comment" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131026055835')[0m
+  [1m[35m (147.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:06:56 -0700
+Connecting to database specified by database.yml
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 141ms (Views: 0.0ms | ActiveRecord: 12.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 23:08:24 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"maptolinkedins"=>{"bluetooth"=>"DevikasIPhone", "linkedinprofile"=>"devikanair", "name"=>"Devika Nair", "profiletitle"=>"TA at CMU", "skills"=>"Java,Sleeping", "picurl"=>"https://fbcdn-photos-h-a.akamaihd.net/hphotos-ak-prn2/s720x720/1395843_10151633982246256_2073503650_n.jpg"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (23.0ms)[0m  [1mINSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)[0m  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 06:08:24 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 06:08:24 UTC +00:00]]
+  [1m[35m (197.0ms)[0m  commit transaction
+Completed 201 Created in 244ms (Views: 3.0ms | ActiveRecord: 223.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:08:29 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 3ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:08:32 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 3ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mappings.json" for 127.0.0.1 at 2013-10-25 23:09:12 -0700
+Processing by MappingsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"DevikasIPhone", "linkedinprofile"=>"devikanair", "name"=>"Devika Nair", "profiletitle"=>"TA at CMU", "skills"=>"Java,Sleeping", "picurl"=>"https://fbcdn-photos-h-a.akamaihd.net/hphotos-ak-prn2/s720x720/1395843_10151633982246256_2073503650_n.jpg"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "mappings" ("bluetooth", "created_at", "linkedinprofile", "updated_at") VALUES (?, ?, ?, ?)  [["bluetooth", nil], ["created_at", Sat, 26 Oct 2013 06:09:12 UTC +00:00], ["linkedinprofile", nil], ["updated_at", Sat, 26 Oct 2013 06:09:12 UTC +00:00]]
+  [1m[36m (142.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 149ms (Views: 2.0ms | ActiveRecord: 145.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:09:14 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (2.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 4ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:09:25 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:10:54 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"DevikasIPhone", "linkedinprofile"=>"devikanair", "name"=>"Devika Nair", "profiletitle"=>"TA at CMU", "skills"=>"Java,Sleeping", "picurl"=>"https://fbcdn-photos-h-a.akamaihd.net/hphotos-ak-prn2/s720x720/1395843_10151633982246256_2073503650_n.jpg"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bluetooth", "DevikasIPhone"], ["comment", nil], ["created_at", Sat, 26 Oct 2013 06:10:54 UTC +00:00], ["linkedinprofile", "devikanair"], ["name", "Devika Nair"], ["picurl", "https://fbcdn-photos-h-a.akamaihd.net/hphotos-ak-prn2/s720x720/1395843_10151633982246256_2073503650_n.jpg"], ["profiletitle", "TA at CMU"], ["skills", "Java,Sleeping"], ["updated_at", Sat, 26 Oct 2013 06:10:54 UTC +00:00]]
+  [1m[35m (394.0ms)[0m  commit transaction
+Completed 201 Created in 427ms (Views: 3.0ms | ActiveRecord: 396.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:10:55 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:13:48 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bluetooth", "RamyasAndroid"], ["comment", nil], ["created_at", Sat, 26 Oct 2013 06:13:48 UTC +00:00], ["linkedinprofile", "ramya201"], ["name", "Ramya B"], ["picurl", "http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"], ["profiletitle", "TA at CMU"], ["skills", "Java,Android"], ["updated_at", Sat, 26 Oct 2013 06:13:48 UTC +00:00]]
+  [1m[35m (344.0ms)[0m  commit transaction
+Completed 201 Created in 353ms (Views: 2.0ms | ActiveRecord: 346.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-25 23:14:05 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mappings.json" for 127.0.0.1 at 2013-10-25 23:19:55 -0700
+Processing by MappingsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 71ms (Views: 3.0ms | ActiveRecord: 2.0ms)
