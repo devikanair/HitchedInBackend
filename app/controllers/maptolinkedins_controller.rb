@@ -41,8 +41,10 @@ class MaptolinkedinsController < ApplicationController
   # POST /maptolinkedins.json
   def create
     @maptolinkedin = Maptolinkedin.new(params[:maptolinkedin])
-
-    respond_to do |format|
+    @bluetooth = @maptolinkedin[:bluetooth]
+    @allbluetooths = Maptolinkedin.all.collect {|p| p.bluetooth}
+    unless @allbluetooths.include? @bluetooth
+      respond_to do |format|
       if @maptolinkedin.save
         format.html { redirect_to @maptolinkedin, notice: 'Maptolinkedin was successfully created.' }
         format.json { render json: @maptolinkedin, status: :created, location: @maptolinkedin }
@@ -50,6 +52,10 @@ class MaptolinkedinsController < ApplicationController
         format.html { render action: "new" }
         format.json { render json: @maptolinkedin.errors, status: :unprocessable_entity }
       end
+      end
+    else
+      format.html { render action: "new" }
+      format.json { render json: "error", status: :unprocessable_entity }
     end
   end
 

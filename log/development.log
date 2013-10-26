@@ -1918,3 +1918,256 @@ WARNING: Can't verify CSRF token authenticity
 ["DevikasIPhone", "RamyasAndroid"]
   [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."bluetooth" IN ('DevikasIPhone', 'RamyasAndroid')[0m
 Completed 200 OK in 3ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/changetypes.json" for 127.0.0.1 at 2013-10-26 12:04:23 -0700
+Processing by ChangetypesController#index as JSON
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 27ms (Views: 3.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/changetypes.json" for 127.0.0.1 at 2013-10-26 12:04:35 -0700
+Processing by ChangetypesController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+
+R
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."linkedinprofile" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (2.0ms)[0m  [1mUPDATE "maptolinkedins" SET "comment" = 'R', "updated_at" = '2013-10-26 19:04:35.187683' WHERE "maptolinkedins"."id" = 3[0m
+  [1m[35m (136.0ms)[0m  commit transaction
+Completed 200 OK in 145ms (Views: 1.0ms | ActiveRecord: 139.0ms)
+
+
+Started GET "/changetypes.json" for 127.0.0.1 at 2013-10-26 12:04:41 -0700
+Processing by ChangetypesController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/changetypes.json" for 127.0.0.1 at 2013-10-26 12:05:09 -0700
+Processing by ChangetypesController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+
+R
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" WHERE "maptolinkedins"."linkedinprofile" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/changetypes.json" for 127.0.0.1 at 2013-10-26 12:05:12 -0700
+Processing by ChangetypesController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/changetypes.json" for 127.0.0.1 at 2013-10-26 12:05:16 -0700
+Processing by ChangetypesController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:05:49 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `console' for #<MaptolinkedinsController:0x4803600>):
+  app/controllers/maptolinkedins_controller.rb:45:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.0ms)
+
+
+Started GET "/changetypes.json" for 127.0.0.1 at 2013-10-26 12:05:53 -0700
+Processing by ChangetypesController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:06:00 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:06:29 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 4ms
+
+NameError (undefined local variable or method `console' for #<MaptolinkedinsController:0x35b3b00>):
+  app/controllers/maptolinkedins_controller.rb:45:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:07:20 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 16ms
+
+NameError (undefined local variable or method `console' for #<MaptolinkedinsController:0x4755a50>):
+  app/controllers/maptolinkedins_controller.rb:44:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:08:16 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["bluetooth", "RamyasAndroid"], ["comment", nil], ["created_at", Sat, 26 Oct 2013 19:08:17 UTC +00:00], ["linkedinprofile", "ramya201"], ["name", "Ramya B"], ["picurl", "http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"], ["profiletitle", "TA at CMU"], ["skills", "Java,Android"], ["updated_at", Sat, 26 Oct 2013 19:08:17 UTC +00:00]]
+  [1m[36m (152.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 180ms (Views: 3.0ms | ActiveRecord: 159.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:09:09 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+#<Maptolinkedin:0x40a7498>
+
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bluetooth", "RamyasAndroid"], ["comment", nil], ["created_at", Sat, 26 Oct 2013 19:09:09 UTC +00:00], ["linkedinprofile", "ramya201"], ["name", "Ramya B"], ["picurl", "http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"], ["profiletitle", "TA at CMU"], ["skills", "Java,Android"], ["updated_at", Sat, 26 Oct 2013 19:09:09 UTC +00:00]]
+  [1m[35m (203.0ms)[0m  commit transaction
+Completed 201 Created in 223ms (Views: 2.0ms | ActiveRecord: 206.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:09:17 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:09:42 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+#<Maptolinkedin:0x47576a0>
+RamyasAndroid
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bluetooth", "RamyasAndroid"], ["comment", nil], ["created_at", Sat, 26 Oct 2013 19:09:42 UTC +00:00], ["linkedinprofile", "ramya201"], ["name", "Ramya B"], ["picurl", "http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"], ["profiletitle", "TA at CMU"], ["skills", "Java,Android"], ["updated_at", Sat, 26 Oct 2013 19:09:42 UTC +00:00]]
+  [1m[35m (836.0ms)[0m  commit transaction
+Completed 201 Created in 860ms (Views: 2.0ms | ActiveRecord: 839.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:13:40 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 500 Internal Server Error in 18ms
+
+NoMethodError (undefined method `contains?' for #<Array:0x599e080>):
+  app/controllers/maptolinkedins_controller.rb:46:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:15:30 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 500 Internal Server Error in 22ms
+
+NoMethodError (undefined method `includes?' for #<Array:0x599e128>):
+  app/controllers/maptolinkedins_controller.rb:46:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:15:54 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+duplicate
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bluetooth", "RamyasAndroid"], ["comment", nil], ["created_at", Sat, 26 Oct 2013 19:15:54 UTC +00:00], ["linkedinprofile", "ramya201"], ["name", "Ramya B"], ["picurl", "http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"], ["profiletitle", "TA at CMU"], ["skills", "Java,Android"], ["updated_at", Sat, 26 Oct 2013 19:15:54 UTC +00:00]]
+  [1m[35m (214.0ms)[0m  commit transaction
+Completed 201 Created in 239ms (Views: 2.0ms | ActiveRecord: 216.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:17:29 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 500 Internal Server Error in 20ms
+
+ArgumentError (too few arguments):
+  app/controllers/maptolinkedins_controller.rb:57:in `format'
+  app/controllers/maptolinkedins_controller.rb:57:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:20:23 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (1.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 23ms (Views: 4.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:20:33 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"RamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 500 Internal Server Error in 3ms
+
+ArgumentError (too few arguments):
+  app/controllers/maptolinkedins_controller.rb:57:in `format'
+  app/controllers/maptolinkedins_controller.rb:57:in `create'
+
+
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstallerNew/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:20:36 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[35mMaptolinkedin Load (0.0ms)[0m  SELECT "maptolinkedins".* FROM "maptolinkedins" 
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:22:16 -0700
+Processing by MaptolinkedinsController#create as JSON
+  Parameters: {"maptolinkedin"=>{"bluetooth"=>"ARamyasAndroid", "linkedinprofile"=>"ramya201", "name"=>"Ramya B", "profiletitle"=>"TA at CMU", "skills"=>"Java,Android", "picurl"=>"http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"}, "comment"=>"R"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mMaptolinkedin Load (0.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "maptolinkedins" ("bluetooth", "comment", "created_at", "linkedinprofile", "name", "picurl", "profiletitle", "skills", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["bluetooth", "ARamyasAndroid"], ["comment", nil], ["created_at", Sat, 26 Oct 2013 19:22:16 UTC +00:00], ["linkedinprofile", "ramya201"], ["name", "Ramya B"], ["picurl", "http://qph.is.quoracdn.net/main-thumb-19609480-200-8jYP5NR0wxPclRDXeNRDF4iIQkWBwDeF.jpeg"], ["profiletitle", "TA at CMU"], ["skills", "Java,Android"], ["updated_at", Sat, 26 Oct 2013 19:22:16 UTC +00:00]]
+  [1m[35m (178.0ms)[0m  commit transaction
+Completed 201 Created in 190ms (Views: 2.0ms | ActiveRecord: 180.0ms)
+
+
+Started GET "/maptolinkedins.json" for 127.0.0.1 at 2013-10-26 12:22:18 -0700
+Processing by MaptolinkedinsController#index as JSON
+  [1m[36mMaptolinkedin Load (1.0ms)[0m  [1mSELECT "maptolinkedins".* FROM "maptolinkedins" [0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 1.0ms)
